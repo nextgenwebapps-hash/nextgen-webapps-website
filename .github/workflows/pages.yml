@@ -1,45 +1,48 @@
-name: Build and deploy website
-
+name: Validate and deploy website
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Build static pages
-        run: npm run build
-      - name: Upload website artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
+      - name: Validate required website files
+        run: |
+          set -e
+          for file in index.html about.html services.html products.html our-process.html contact.html privacy-policy.html terms-condition.html support.html src/components/header.html src/components/footer.html assets/styles.css assets/site.js; do
+            test -s "$file" || { echo "Missing or empty: $file"; exit 1; }
+          done
+          if find . -maxdepth 3 -type f \( -path './src/pages/*' -o -path './scripts/*' -o -name 'terms.html' \) | grep -q .; then
+            echo "Unexpected duplicate/source page files found"; exit 1
+          fi
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

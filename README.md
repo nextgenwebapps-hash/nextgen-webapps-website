@@ -1,30 +1,31 @@
-# NEXTGEN WEB&APPS website
+# NEXTGEN WEB&APPS
 
-Responsive static website for GitHub Pages, maintained with reusable HTML components and page-specific source files.
+A responsive, modular static website for NEXTGEN WEB&APPS, an India-based digital services business.
 
-## Structure
-- `src/components/header.html` — shared header and navigation
-- `src/components/footer.html` — shared footer and legal links
-- `src/pages/*.html` — each page's content, maintained separately
-- `scripts/build.mjs` — generates complete static HTML pages
-- `assets/css/` — stylesheets
-- `assets/js/` — browser interactions
-- `assets/images/` — original SVG illustrations and other licensed assets
-- Root-level HTML files — generated deployable pages; edit source files instead
+## Website structure
 
-## Edit and build
-1. Edit the relevant file in `src/pages/`.
-2. Edit shared layout in `src/components/`.
-3. Run `npm run build` with Node.js 18 or later.
-4. Preview and test generated pages before publishing.
+- Root HTML files are the only page files. Each page has its own title, description, canonical URL and page content.
+- `src/components/header.html` and `src/components/footer.html` are the single shared navigation and footer sources.
+- `assets/styles.css` contains all website styling.
+- `assets/site.js` loads the shared components and provides the responsive mobile navigation.
+- `assets/images/` contains original SVG illustrations.
 
-The build uses Node.js built-in modules and has no third-party build dependencies.
+There are no generated duplicate HTML pages, page-source copies, package/build scripts or compatibility alias pages.
+
+## Local preview
+
+Run a local static server from the repository root (for example, VS Code Live Server). The shared header and footer use browser fetch requests and therefore need HTTP hosting; opening a page directly using a `file://` URL will not load shared components.
 
 ## GitHub Pages
-Keep generated HTML files in the repository root. In Settings → Pages, choose Deploy from a branch, select the release branch and /(root).
 
-## Images
-Current illustrations are original SVG artwork created for this website. They do not use stock photographs, third-party logos or externally hosted image assets. For future third-party assets, verify each specific license and retain its source and license record.
+The GitHub Actions workflow validates the required root pages on pull requests. A push to `main` deploys the repository root to GitHub Pages. In repository Settings → Pages, select **GitHub Actions** as the deployment source.
 
-## Before launch
-Verify business details, contact information, hosting logs, cookies, analytics and third-party services. Every mobile app needs accurate privacy disclosures for its own data practices and SDKs. Test all pages, links, mobile layouts and HTTPS. Website design cannot guarantee Google Play or Apple review approval.
+## Privacy and app-store readiness
+
+The website privacy policy describes this website only. Each published app needs its own accurate privacy policy and Google Play Data safety declarations covering its actual data collection, sharing, purposes, SDKs, retention and deletion process. Website design cannot guarantee Google Play review or developer-account acceptance.
+
+Business registration identifiers such as GSTIN, Udyam number, PAN, bank details and identity documents are intentionally not published on this public website. Verify public business contact details and app-specific disclosures before submission.
+
+## Images and licensing
+
+The illustrations currently used are original SVG artwork stored in this repository. If external images are added later, check the licence for each asset and keep a record of its source and permitted use.
