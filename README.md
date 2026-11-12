@@ -15,6 +15,8 @@ official-nextgen-web-apps-website/
 ├── privacy-policy.html
 ├── terms-condition.html
 ├── support.html
+├── sitemap.xml
+├── robots.txt
 ├── src/
 │   └── components/
 │       ├── header.html
