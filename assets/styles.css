@@ -13,3 +13,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 .hero .actions .button-primary{background:linear-gradient(110deg,#0066FF 0%,#EC4899 100%);color:#fff}
+
+.hero .actions .button-primary .cta-arrow{display:inline-block;margin-left:7px;transition:transform .25s ease}.hero .actions .button-primary:hover .cta-arrow{transform:translate(3px,-3px)}
