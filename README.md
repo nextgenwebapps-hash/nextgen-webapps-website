@@ -1,30 +1,48 @@
-# NEXTGEN WEB&APPS website
+# NEXTGEN WEB&APPS — Official Website
 
-A responsive static website for GitHub Pages.
+A lightweight, responsive multi-page business website built with plain HTML, CSS and JavaScript.
 
-## Files
-- `index.html` — homepage (opens at the repository's root URL)
-- `privacy-policy.html` — website privacy information
-- `terms.html` — website terms
-- `support.html` — support contact page
-- `assets/` — styles, JavaScript and favicon
+## Structure
 
-## Publish with GitHub Pages
-1. Create a GitHub repository. For a project site, the public URL will normally be `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
-2. Upload the contents of this folder to the repository root. Make sure `index.html` is at the root, not inside another nested folder.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then Save.
-6. Wait for the Pages deployment to finish. Open the URL shown in Settings → Pages.
+```
+official-nextgen-web-apps-website/
+├── index.html
+├── about.html
+├── services.html
+├── products.html
+├── our-process.html
+├── contact.html
+├── privacy-policy.html
+├── terms-condition.html
+├── support.html
+├── src/
+│   └── components/
+│       ├── header.html
+│       └── footer.html
+├── assets/
+│   ├── favicon.svg
+│   ├── styles.css
+│   └── site.js
+├── .github/
+│   └── workflows/
+│       └── pages.yml
+└── README.md
+```
 
-The homepage is the default page at the repository URL. The navigation links scroll to homepage sections; the active section link is highlighted. Privacy policy, Terms and Support are separate pages.
+## Local preview
 
-## Before publishing
-- Confirm the business name, business structure and contact email are accurate.
-- The privacy policy is a website-level starting point. Update it to match actual hosting logs, analytics, cookies, contact forms and third-party services.
-- Each mobile app needs its own accurate privacy policy covering all data collected/shared by the app and its SDKs.
-- Replace any details if your actual business/legal status differs. Do not add private identity, tax, banking or registration numbers to a public page unless genuinely required.
-- Test all pages and links on mobile and desktop.
+Because the shared header and footer are loaded with `fetch()`, serve the folder through a local HTTP server (for example, VS Code Live Server). Opening HTML files directly with `file://` will block component requests in most browsers.
 
-## Optional custom domain
-You can later add a domain under **Settings → Pages → Custom domain** and configure the DNS records GitHub provides.
+## Deployment
+
+The GitHub Actions workflow publishes the root directory to GitHub Pages. Enable **Settings → Pages → Build and deployment → GitHub Actions**.
+
+## Before public launch
+
+- Confirm the actual hosting provider's access-log configuration and retention period.
+- Review privacy disclosures whenever analytics, forms, embeds, app integrations or other third-party services are added.
+- Publish a separate app-specific privacy policy for each app that accurately describes its data practices; a general website privacy page is not a substitute.
+- Confirm the business contact information and GST-registered address against current registration records.
+- Add only real product listings, screenshots, support commitments and contact channels.
+
+This website does not guarantee Google Play Console approval. Play Console account verification, app declarations, Data Safety answers and app-specific policy compliance are separate requirements.
