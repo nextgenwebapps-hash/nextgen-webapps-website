@@ -17,3 +17,5 @@
 .hero .actions .button-primary .cta-arrow{display:inline-block;margin-left:7px;transition:transform .25s ease}.hero .actions .button-primary:hover .cta-arrow{transform:translate(3px,-3px)}
 
 .primary-nav .nav-cta span{display:inline-block;transition:transform .25s ease}.primary-nav .nav-cta:hover span{transform:translate(3px,-3px)}
+
+.cta-band .button-light .cta-arrow{display:inline-block;margin-left:7px;transition:transform .25s ease}.cta-band .button-light:hover .cta-arrow{transform:translate(3px,-3px)}
