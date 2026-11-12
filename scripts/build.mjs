@@ -16,7 +16,7 @@ const pages=[
 ];
 for(const [key,file,title,description] of pages){
  const content=await readFile(resolve(root,`src/pages/${key}.html`),"utf8");
- const nav=header.replace(/href="(about|services|products|our-process|contact)\.html"/g,(m,p)=>m.replace('href=',`aria-current="${p===key?"page":"false"}" href=`));
+ const nav=header.replace(/href="(about|services|products|our-process|contact)\.html"/g,(match,page)=>page===key?match.replace("href=","aria-current=\"page\" href="):match);
  const html=`<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${description}"><meta name="theme-color" content="#0b1220"><title>${title}</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/styles.css"></head><body data-page="${key}">
 ${nav}
