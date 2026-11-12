@@ -1,30 +1,30 @@
 # NEXTGEN WEB&APPS website
 
-A responsive static website for GitHub Pages.
+Responsive static website for GitHub Pages, maintained with reusable HTML components and page-specific source files.
 
-## Files
-- `index.html` — homepage (opens at the repository's root URL)
-- `privacy-policy.html` — website privacy information
-- `terms.html` — website terms
-- `support.html` — support contact page
-- `assets/` — styles, JavaScript and favicon
+## Structure
+- `src/components/header.html` — shared header and navigation
+- `src/components/footer.html` — shared footer and legal links
+- `src/pages/*.html` — each page's content, maintained separately
+- `scripts/build.mjs` — generates complete static HTML pages
+- `assets/css/` — stylesheets
+- `assets/js/` — browser interactions
+- `assets/images/` — original SVG illustrations and other licensed assets
+- Root-level HTML files — generated deployable pages; edit source files instead
 
-## Publish with GitHub Pages
-1. Create a GitHub repository. For a project site, the public URL will normally be `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
-2. Upload the contents of this folder to the repository root. Make sure `index.html` is at the root, not inside another nested folder.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then Save.
-6. Wait for the Pages deployment to finish. Open the URL shown in Settings → Pages.
+## Edit and build
+1. Edit the relevant file in `src/pages/`.
+2. Edit shared layout in `src/components/`.
+3. Run `npm run build` with Node.js 18 or later.
+4. Preview and test generated pages before publishing.
 
-The homepage is the default page at the repository URL. The navigation links scroll to homepage sections; the active section link is highlighted. Privacy policy, Terms and Support are separate pages.
+The build uses Node.js built-in modules and has no third-party build dependencies.
 
-## Before publishing
-- Confirm the business name, business structure and contact email are accurate.
-- The privacy policy is a website-level starting point. Update it to match actual hosting logs, analytics, cookies, contact forms and third-party services.
-- Each mobile app needs its own accurate privacy policy covering all data collected/shared by the app and its SDKs.
-- Replace any details if your actual business/legal status differs. Do not add private identity, tax, banking or registration numbers to a public page unless genuinely required.
-- Test all pages and links on mobile and desktop.
+## GitHub Pages
+Keep generated HTML files in the repository root. In Settings → Pages, choose Deploy from a branch, select the release branch and /(root).
 
-## Optional custom domain
-You can later add a domain under **Settings → Pages → Custom domain** and configure the DNS records GitHub provides.
+## Images
+Current illustrations are original SVG artwork created for this website. They do not use stock photographs, third-party logos or externally hosted image assets. For future third-party assets, verify each specific license and retain its source and license record.
+
+## Before launch
+Verify business details, contact information, hosting logs, cookies, analytics and third-party services. Every mobile app needs accurate privacy disclosures for its own data practices and SDKs. Test all pages, links, mobile layouts and HTTPS. Website design cannot guarantee Google Play or Apple review approval.
