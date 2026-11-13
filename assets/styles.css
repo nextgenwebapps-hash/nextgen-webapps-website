@@ -1,3 +1,20 @@
+
+/* Load the HTML/CSS brand logo system on every page. */
+@import url("brand-logos.css");
+
+/* Compact logo sizing in the global header and footer. */
+.site-header .ng-logo{gap:0}
+.site-header .ng-symbol{width:40px;border-radius:12px}
+.site-header .ng-letter{font-size:29px}
+.site-header .ng-symbol:after{border-width:3px}
+.site-header .brand-name{margin-left:10px}
+.footer-brand .ng-logo--horizontal{gap:10px}
+.footer-brand .ng-logo--horizontal .ng-symbol{width:72px}
+.footer-brand .ng-logo--horizontal .ng-letter{font-size:56px}
+.footer-brand .ng-logo--horizontal .ng-symbol:after{border-width:4px}
+.footer-brand .ng-wordmark strong{font-size:31px;color:#fff}
+.footer-brand .ng-wordmark small{font-size:13px;color:#fff;letter-spacing:.18em;margin-top:5px}
+@media(max-width:640px){.site-header .ng-symbol{width:36px}.site-header .ng-letter{font-size:26px}.footer-brand .ng-logo--horizontal .ng-symbol{width:62px}}
 :root{--ink:#101a36;--muted:#64718a;--purple:#315cff;--purple-dark:#171b4a;--mint:#35d9ed;--line:#e4e9f5;--paper:#f7f9ff;--white:#fff;--max:1160px;--radius:22px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;padding:10px;z-index:100}.skip-link:focus{left:8px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .site-header{position:sticky;top:0;z-index:20;background:rgba(247,249,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(32,33,59,.06)}.nav-wrap{height:84px;display:flex;align-items:center;justify-content:space-between}.menu-toggle{display:none}.brand{display:inline-flex;align-items:center;gap:11px}.brand-mark{width:40px;height:40px;border-radius:13px;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 23px Arial;position:relative}.brand-mark span{position:absolute;font-size:11px;color:var(--mint);right:5px;top:3px}.brand-name{font:800 14px Arial;letter-spacing:.02em;line-height:1.15}.brand-name b{font-weight:500}.brand-name small{display:block;color:var(--muted);font:700 8px 'DM Sans';letter-spacing:.2em;margin-top:5px}.primary-nav{display:flex;align-items:center;gap:32px}.primary-nav a{font-size:13px;font-weight:600;color:#56627d;transition:color .2s}.primary-nav a:hover,.primary-nav a[aria-current=page]{color:var(--purple)}.primary-nav .nav-cta{background:linear-gradient(110deg,#0066FF 0%,#EC4899 100%);color:#fff;padding:12px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,102,255,.22);transition:transform .2s,box-shadow .2s}.primary-nav .nav-cta:hover{background:linear-gradient(110deg,#0066FF 0%,#EC4899 100%);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px #28245b20}.primary-nav .nav-cta[aria-current=page]{background:#0066FF;color:#fff}.primary-nav .nav-cta[aria-current=page] span{color:#fff}.nav-cta span{color:#fff;margin-left:8px}
