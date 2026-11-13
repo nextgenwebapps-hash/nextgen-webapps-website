@@ -1,27 +1,11 @@
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdC
-b3g9IjAgMCAxMjggMTI4Ij4KPGRlZnM+CiA8bGluZWFyR3JhZGllbnQgaWQ9
-ImJnIiB4MT0iMTIiIHkxPSI4IiB4Mj0iMTE2IiB5Mj0iMTIwIiBncmFkaWVu
-dFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA4
-RDdGNSIvPjxzdG9wIG9mZnNldD0iLjQ4IiBzdG9wLWNvbG9yPSIjMjQ1QkZG
-Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOUIxNkU4Ii8+PC9s
-aW5lYXJHcmFkaWVudD4KIDxsaW5lYXJHcmFkaWVudCBpZD0ibiIgeDE9IjI2
-IiB5MT0iMjYiIHgyPSIxMDAiIHkyPSIxMDQiIGdyYWRpZW50VW5pdHM9InVz
-ZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZmIi8+PHN0b3Ag
-b2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRERFNkZGIi8+PC9saW5lYXJHcmFk
-aWVudD4KIDxsaW5lYXJHcmFkaWVudCBpZD0ib3JiaXQiIHgxPSIxMCIgeTE9
-Ijg0IiB4Mj0iMTE4IiB5Mj0iNDYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFj
-ZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMTNFMkY0Ii8+PHN0b3Agb2Zm
-c2V0PSIuNTUiIHN0b3AtY29sb3I9IiMzOTgyRkYiLz48c3RvcCBvZmZzZXQ9
-IjEiIHN0b3AtY29sb3I9IiNGRjRFREIiLz48L2xpbmVhckdyYWRpZW50Pgo8
-L2RlZnM+CjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxMjIiIGhlaWdodD0i
-MTIyIiByeD0iMzQiIGZpbGw9InVybCgjYmcpIi8+CjxwYXRoIGQ9Ik0zMSA5
-MVYzN2MwLTcgOC0xMCAxMy01bDQwIDQyVjM4YzAtNyA1LTExIDExLTExaDN2
-NjRjMCA3LTggMTAtMTMgNUw0NSA1NHYzN0gzMVoiIGZpbGw9InVybCgjbiki
-Lz4KPHBhdGggZD0iTTEzIDg2YzE5IDE3IDY5IDUgMTAzLTMxIiBmaWxsPSJu
-b25lIiBzdHJva2U9InVybCgjb3JiaXQpIiBzdHJva2Utd2lkdGg9IjgiIHN0
-cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cmVjdCB4PSI5NyIgeT0iMTUiIHdp
-ZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5
-PSIuOTUiLz48cmVjdCB4PSIxMDgiIHk9IjI3IiB3aWR0aD0iNiIgaGVpZ2h0
-PSI2IiByeD0iMS41IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOCIvPjxyZWN0
-IHg9IjkzIiB5PSIyOSIgd2lkdGg9IjUiIGhlaWdodD0iNSIgcng9IjEuMiIg
-ZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjc1Ii8+Cjwvc3ZnPg==
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs>
+ <linearGradient id="bg" x1="12" y1="8" x2="116" y2="120" gradientUnits="userSpaceOnUse"><stop stop-color="#08D7F5"/><stop offset=".48" stop-color="#245BFF"/><stop offset="1" stop-color="#9B16E8"/></linearGradient>
+ <linearGradient id="n" x1="26" y1="26" x2="100" y2="104" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#DDE6FF"/></linearGradient>
+ <linearGradient id="orbit" x1="10" y1="84" x2="118" y2="46" gradientUnits="userSpaceOnUse"><stop stop-color="#13E2F4"/><stop offset=".55" stop-color="#3982FF"/><stop offset="1" stop-color="#FF4EDB"/></linearGradient>
+</defs>
+<rect x="3" y="3" width="122" height="122" rx="34" fill="url(#bg)"/>
+<path d="M31 91V37c0-7 8-10 13-5l40 42V38c0-7 5-11 11-11h3v64c0 7-8 10-13 5L45 54v37H31Z" fill="url(#n)"/>
+<path d="M13 86c19 17 69 5 103-31" fill="none" stroke="url(#orbit)" stroke-width="8" stroke-linecap="round"/>
+<rect x="97" y="15" width="8" height="8" rx="2" fill="#fff" opacity=".95"/><rect x="108" y="27" width="6" height="6" rx="1.5" fill="#fff" opacity=".8"/><rect x="93" y="29" width="5" height="5" rx="1.2" fill="#fff" opacity=".75"/>
+</svg>
