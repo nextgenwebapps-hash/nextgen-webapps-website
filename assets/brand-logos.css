@@ -24,3 +24,9 @@
 .ng-gallery .ng-logo--circle .ng-letter,.ng-gallery .ng-logo--app .ng-letter{font-size:100px}
 .ng-gallery .ng-logo--horizontal .ng-symbol{width:170px}
 @media(max-width:640px){.ng-logo--horizontal{gap:10px}.ng-logo--horizontal .ng-symbol{width:88px}.ng-logo--horizontal .ng-letter{font-size:72px}.ng-wordmark strong{font-size:32px}.ng-wordmark small{font-size:13px;letter-spacing:.16em}.ng-gallery section{padding:24px 14px;min-height:170px}.ng-gallery .ng-logo--circle .ng-symbol,.ng-gallery .ng-logo--app .ng-symbol{width:116px}.ng-gallery .ng-logo--circle .ng-letter,.ng-gallery .ng-logo--app .ng-letter{font-size:76px}.ng-gallery .ng-logo--horizontal .ng-symbol{width:100px}}
+/* Use the supplied original logo artwork in the global header and footer. */
+.site-header .header-logo-image{display:block;width:48px;height:48px;object-fit:contain;flex:0 0 48px}
+.site-header .brand{gap:10px}
+.footer-logo-link{display:inline-block;max-width:280px;line-height:0;background:#fff;border-radius:6px;padding:5px}
+.footer-brand .footer-logo-image{display:block;width:min(100%,270px);height:auto;object-fit:contain}
+@media(max-width:640px){.site-header .header-logo-image{width:42px;height:42px;flex-basis:42px}.footer-brand .footer-logo-image{width:min(100%,245px)}}
