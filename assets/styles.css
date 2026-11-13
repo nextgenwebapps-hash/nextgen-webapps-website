@@ -53,3 +53,11 @@
     transform: scale(1.1);
   }
 }
+
+
+/* Rounded corners for the horizontal footer logo. */
+.footer-logo-image {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
