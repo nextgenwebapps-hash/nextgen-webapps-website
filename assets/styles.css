@@ -35,3 +35,7 @@
 .support-panel .button-primary .cta-arrow,.contact-card .button-primary .cta-arrow{display:inline-block;margin-left:7px;transition:transform .25s ease}.support-panel .button-primary:hover .cta-arrow,.contact-card .button-primary:hover .cta-arrow{transform:translate(3px,-3px)}
 
 
+
+/* Remove decorative hero bubbles/orbit accents only. */
+.hero-art .orbit,
+.hero-art .spark{display:none}
