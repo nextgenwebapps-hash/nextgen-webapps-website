@@ -41,6 +41,19 @@
     });
   };
 
+  const setSiteIcon = () => {
+    let icon = document.querySelector('link[rel="icon"]');
+    if (!icon) {
+      icon = document.createElement("link");
+      icon.rel = "icon";
+      document.head.appendChild(icon);
+    }
+    icon.href = "assets/nextgen-square-logo.png";
+    icon.type = "image/png";
+  };
+
+  setSiteIcon();
+
   Promise.all([
     loadFragment("site-header", "src/components/header.html"),
     loadFragment("site-footer", "src/components/footer.html")
