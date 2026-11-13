@@ -1,0 +1,26 @@
+/* NEXTGEN WEB&APPS — three pure HTML/CSS logo treatments */
+.ng-logo{--cyan:#08d9f4;--blue:#0758f5;--violet:#7a08e8;--pink:#fa39df;display:inline-flex;align-items:center;gap:18px;color:#111d3b;font-family:Arial,Helvetica,sans-serif;text-decoration:none}
+.ng-symbol{position:relative;isolation:isolate;display:grid;place-items:center;flex:none;width:112px;aspect-ratio:1;border-radius:50%;overflow:visible;background:linear-gradient(142deg,#08dff4 0%,#0758f5 39%,#1710b7 67%,#e000e8 100%);box-shadow:inset -12px -14px 24px #09005c66,inset 8px 8px 18px #4ffaff55,0 12px 28px #2513a326}
+.ng-symbol:before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(150deg,#fff5 0%,transparent 28%,#0002 66%,#ff4bfa55 100%);z-index:-1}
+.ng-symbol:after{content:"";position:absolute;z-index:3;left:8%;top:43%;width:91%;height:30%;border:7px solid transparent;border-left-color:#04e5f4;border-bottom-color:#247aff;border-right-color:#ff54e5;border-radius:50%;transform:rotate(-23deg);filter:drop-shadow(0 2px 2px #07004d66)}
+.ng-letter{font-family:Arial Black,Arial,sans-serif;font-size:76px;font-weight:900;line-height:1;letter-spacing:-.12em;padding-right:.12em;color:#f7f7ff;text-shadow:0 2px 1px #fff9,0 5px 9px #08006c88;transform:scaleX(1.04)}
+.ng-logo--circle .ng-symbol{border-radius:50%}
+.ng-logo--app .ng-symbol{border-radius:27%}
+.ng-logo--app .ng-symbol:before{border-radius:inherit}
+.ng-logo--app .ng-letter{font-size:78px}
+.ng-logo--horizontal{gap:20px}
+.ng-logo--horizontal .ng-symbol{width:142px;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.ng-logo--horizontal .ng-symbol:before{display:none}
+.ng-logo--horizontal .ng-letter{font-size:108px;color:transparent;background:linear-gradient(145deg,#04e1f4 4%,#0860ff 44%,#2611c8 67%,#e20ce8 100%);background-clip:text;-webkit-background-clip:text;text-shadow:0 4px 8px #1300a333}
+.ng-logo--horizontal .ng-symbol:after{left:1%;top:48%;width:102%;height:24%;border-width:8px}
+.ng-wordmark{display:flex;flex-direction:column;line-height:1}
+.ng-wordmark strong{font-size:clamp(36px,5vw,66px);font-weight:850;letter-spacing:-.065em;color:#101d3b;white-space:nowrap}
+.ng-wordmark strong span{background:linear-gradient(100deg,#04cce9 0%,#075cff 55%,#b009e9 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.ng-wordmark small{font-size:clamp(15px,2.4vw,31px);letter-spacing:.22em;font-weight:500;margin:9px 0 0 5px;color:#101d3b;white-space:nowrap}
+.ng-gallery{display:grid;gap:36px;max-width:1080px;margin:0 auto;padding:56px 24px}
+.ng-gallery section{min-height:220px;display:flex;align-items:center;justify-content:center;gap:24px;padding:34px;border:1px solid #e4e9f5;border-radius:24px;background:linear-gradient(145deg,#fff,#f4f7ff)}
+.ng-gallery h2{font:700 13px Arial;letter-spacing:.13em;color:#66718a;margin:0 0 18px;text-align:center}
+.ng-gallery .ng-logo--circle .ng-symbol,.ng-gallery .ng-logo--app .ng-symbol{width:150px}
+.ng-gallery .ng-logo--circle .ng-letter,.ng-gallery .ng-logo--app .ng-letter{font-size:100px}
+.ng-gallery .ng-logo--horizontal .ng-symbol{width:170px}
+@media(max-width:640px){.ng-logo--horizontal{gap:10px}.ng-logo--horizontal .ng-symbol{width:88px}.ng-logo--horizontal .ng-letter{font-size:72px}.ng-wordmark strong{font-size:32px}.ng-wordmark small{font-size:13px;letter-spacing:.16em}.ng-gallery section{padding:24px 14px;min-height:170px}.ng-gallery .ng-logo--circle .ng-symbol,.ng-gallery .ng-logo--app .ng-symbol{width:116px}.ng-gallery .ng-logo--circle .ng-letter,.ng-gallery .ng-logo--app .ng-letter{font-size:76px}.ng-gallery .ng-logo--horizontal .ng-symbol{width:100px}}
