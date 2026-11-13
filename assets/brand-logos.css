@@ -30,3 +30,11 @@
 .footer-logo-link{display:inline-block;max-width:280px;line-height:0;background:#fff;border-radius:6px;padding:5px}
 .footer-brand .footer-logo-image{display:block;width:min(100%,270px);height:auto;object-fit:contain}
 @media(max-width:640px){.site-header .header-logo-image{width:42px;height:42px;flex-basis:42px}.footer-brand .footer-logo-image{width:min(100%,245px)}}
+
+/* Robust global logo visibility and GitHub Pages project-site asset paths. */
+.site-header .header-logo-image{display:block!important;visibility:visible!important;opacity:1!important;width:48px!important;height:48px!important;min-width:48px;object-fit:contain;flex:0 0 48px}
+.site-header .brand{display:inline-flex;align-items:center;gap:10px}
+.site-header .brand-name{display:block;visibility:visible;color:#101a36}
+.footer-logo-link{display:inline-block;max-width:280px;line-height:0;background:#fff;border-radius:6px;padding:5px}
+.footer-brand .footer-logo-image{display:block!important;visibility:visible!important;opacity:1!important;width:min(100%,270px)!important;height:auto!important;object-fit:contain}
+@media(max-width:640px){.site-header .header-logo-image{width:42px!important;height:42px!important;min-width:42px;flex-basis:42px}.footer-brand .footer-logo-image{width:min(100%,245px)!important}}
