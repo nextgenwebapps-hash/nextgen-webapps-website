@@ -39,3 +39,17 @@
 /* Remove decorative hero bubbles/orbit accents only. */
 .hero-art .orbit,
 .hero-art .spark{display:none}
+
+
+/* Subtle 10% hover zoom for the complete header brand. */
+@media (hover: hover) and (pointer: fine) {
+  .site-header .brand {
+    display: inline-flex;
+    transform: scale(1);
+    transform-origin: left center;
+    transition: transform 250ms ease;
+  }
+  .site-header .brand:hover {
+    transform: scale(1.1);
+  }
+}
