@@ -41,15 +41,18 @@
 .hero-art .spark{display:none}
 
 
-/* Subtle 10% hover zoom for the complete header brand. */
+/* Smooth 10% hover zoom for the header logo and complete wordmark. */
 @media (hover: hover) and (pointer: fine) {
-  .site-header .brand {
-    display: inline-flex;
-    transform: scale(1);
-    transform-origin: left center;
+  .site-header .brand-mark,
+  .site-header .brand-name {
     transition: transform 250ms ease;
   }
-  .site-header .brand:hover {
+  .site-header .brand-name {
+    display: inline-block;
+    transform-origin: left center;
+  }
+  .site-header .brand:hover .brand-mark,
+  .site-header .brand:hover .brand-name {
     transform: scale(1.1);
   }
 }
