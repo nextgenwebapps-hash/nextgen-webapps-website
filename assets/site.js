@@ -48,8 +48,8 @@
       icon.rel = "icon";
       document.head.appendChild(icon);
     }
-    icon.href = "assets/nextgen-square-logo.png";
-    icon.type = "image/png";
+    icon.href = "assets/nextgen-square-logo.svg";
+    icon.type = "image/svg+xml";
   };
 
   setSiteIcon();
