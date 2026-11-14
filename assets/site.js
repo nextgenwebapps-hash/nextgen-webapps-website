@@ -48,7 +48,7 @@
       icon.rel = "icon";
       document.head.appendChild(icon);
     }
-    icon.href = "assets/nextgen-square-logo.svg";
+    icon.href = "/official-nextgen-web-apps-website/assets/nextgen-square-logo.svg?v=2";
     icon.type = "image/svg+xml";
   };
 
